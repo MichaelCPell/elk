@@ -1,4 +1,5 @@
-require './hello'
+require './posts'
+
 run Sinatra::Application
 
 
