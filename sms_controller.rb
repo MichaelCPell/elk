@@ -3,6 +3,7 @@ get "/sms/:id" do
 end
 
 post "/sms" do 
+  puts params
   @post = Post.create(name: params[:body])
-  redirect_to "/sms/#{@post.id}"
+  redirect "/sms/#{@post.id}"
 end
