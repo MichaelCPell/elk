@@ -3,7 +3,7 @@ get "/sms/:id" do
 end
 
 post "/sms" do 
-  puts params
+  puts params.to_s
   @post = Post.create(name: params[:body])
   erb :"sms/show.xml"
 end
