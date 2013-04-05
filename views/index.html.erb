@@ -1,0 +1,8 @@
+<h1> Hello World </h1>
+
+<% Post.all.each do |post| %>
+  <%= post.id %>.  <%= post.name %>
+  <br/>
+<% end %>
+
+<a href="/posts/new">Create A New Post</a>
