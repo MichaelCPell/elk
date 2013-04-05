@@ -2,10 +2,10 @@ require 'sinatra'
 require 'data_mapper'
 require 'pry'
 
+require './post'
 require './posts_controller'
 require './sms_controller'
 
-require './post'
 
 
 
